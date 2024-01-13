@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Marck+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400&family=Roboto:wght@500&family=Ubuntu:wght@500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+
+/* --------------- Navigation / Menu Bar ------------- */
+
+.header .container{
+    max-width: 100%;
+    margin: auto;
+    
+}
+
+.header{
+    /* background: radial-gradient(#e4c0c0,#656362); */
+    background-color: #fcfcfc;
+    /* color: black; */
+    
+}
+.header .row{
+    margin-top: 70px;
+}
+
+.header .container .navbar{
+    display: flex;
+    align-items: center;
+    padding: 1.3rem;
+    box-shadow: 0 2px 25px rgba(0,0,0,0.83);
+    border: 1px solid silver;
+}
+
+.header .container .navbar nav{
+    flex: 1;
+    text-align: right;
+}
+
+.header .container .navbar nav ul{
+    display: inline-block;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.header .container .navbar nav ul li{
+    display: inline-block;
+    margin-right: 1.3rem;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0c0000;
+}
+
+.header .container .navbar .logo a{
+    font-family: 'Courgette', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+.header .container .navbar .logo a span {
+    color: #e73b24;
+    font-family: 'Courgette', cursive;
+}
+
+.header .container .navbar nav ul li a:hover, .activeted {
+    color: #e73b24;
+    font-weight: bold;
+}
+.header .container .navbar nav ul li:hover,
+.header .container .navbar .logo:hover {
+    
+    transform: scale(1.05);
+}
+
+
+.header .container .navbar nav .sub-menu{
+    display: none;
+    top: 9.8%;
+    position: relative;
+    
+}
+
+.header .container .navbar nav .sub-menu ul{
+    background-color: #ececec;
+    position: absolute;
+    top: 1.5rem;
+    z-index: 1000;
+    font-size: .8rem;
+
+}
+.header .container .navbar nav ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: #0a0a0a;
+    /* margin-top: 8px; */
+    margin-left: -8px;
+}
+
+.header .container .navbar nav ul li:hover .sub-menu ul{
+    display: block;
+    margin: 6px;
+}
+
+.header .container .navbar nav ul li:hover .sub-menu ul li{
+    width: 100%;
+    padding: 5px;
+    display: block;
+    border-bottom: 1px #333;
+    background-color: relative;
+    transition: 0.5  ease;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.header .container .navbar a{
+    text-decoration: none;
+    color: #080000;
+}
+.header .container .navbar  p{
+    color: #110e0e;
+}
+/* -----------------------Navigation Bar End----------------------- */
+/* --------------------- Footer Start----------------- */
+
+.footer{
+    background-color: black;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 16px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+    text-align: center;
+}
+.footer ul{
+    align-items: center;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-2 a{
+    font-family: 'Courgette', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    color: wheat;
+    letter-spacing: .1rem;
+}
+.footer-col-2 a span{
+    font-family: 'Courgette', cursive;
+    color: #ff523b;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 22%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+
+}
+.app-logo img{
+    width: 120px;
+}
+.footer hr{
+    border: none;
+    background-color: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+.copyright a{
+    color: #8a8a8a;
+}
+
+.buton a{
+    
+    font-size: .7rem;
+}
+.footer-btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #ffffff;
+    padding: .5rem 1.6rem;
+    margin: 1rem 1rem -1rem 0;
+    border-radius: 2rem;
+    transition: background-color 0.5s;
+}
+
+.footer-btn:hover{
+    background: #6e4343;
+    color: white;
+    transform: scale(1.1);
+}
+/* -----------------------Footer End----------------------- */
+
+/* ---------------------- Index page and About page  CSS --------------------*/
+
+.container-1{
+    /* background: radial-gradient(#eec4c4,#4d4b4a); */
+    margin-top: 2rem;
+    background-color: #fff;
+    /* color: #9D5C0D; */
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.col-2{
+    flex-basis: 40%;
+    /* min-width: 35 0px; */
+    /* padding-left: 30px; */
+}
+
+.col-2 img{
+    width: 53rem;
+    height: 42rem;
+    filter: drop-shadow(10px 8px 15px rgb(63, 63, 63));
+    /* height: 34rem; */
+    margin-top: -1.5rem;
+    padding: 5rem 0;
+}
+
+.col-2 h1{
+    font-size: 5rem;
+    line-height: 5rem;
+    margin: 1.5rem 2.5rem;
+    font-family: 'Kaushan Script', cursive;
+}
+.col-2 h1 span{
+    color: #ff523b;
+    font-family: 'Kaushan Script', cursive;
+}
+.col-2 p{
+    font-family: 'Marck Script', cursive;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin: 1rem 0 0 2.5rem;
+
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 1.8rem 2.5rem;
+    border-radius: 0 1rem;
+    transition: background-color 0.5s;
+}
+.about_btn{
+    justify-content: center;
+}
+.btn:hover{
+    background: #563434;
+    border-radius: 0 1rem 1rem 1rem;
+    transform: scale(1.1);
+}
+
+
+.categories{
+    margin: 70px 0;
+}
+
+.row2{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+
+}
+
+.row2 .col-3{
+    display: inline;
+    flex-basis: 45%;
+    /* display: inline; */
+    min-width: 250px;
+    margin: 0;
+
+}
+.col-3 h2{
+    font-size: 2rem;
+    line-height: 2;
+    margin-top: 0;
+    text-align: left;
+    justify-content: left;
+}
+.col-3 h2 i{
+    font-size: 1rem;
+}
+
+.fa-quote-right:before {
+    content: '';
+    margin-right: 20rem;
+}
+
+.col-3 p{
+    font-size: 1.2rem;
+    margin-top: 0;
+}
+.col-3 h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.col-3 img{
+    width: 100%;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+/* SERVIES Page CSS*/
+
+.services {
+    text-align: center;
+    margin: 65px auto 0 auto;
+    margin-top: 0;
+    padding-top: 3rem;
+    height: 45rem;
+    /* background: radial-gradient(#e4c0c0,#4d4b4a); */
+    background-color: #fff;
+
+}
+
+.services h1{
+    font-size: 2.8rem;
+    font-family: 'Kaushan Script', cursive;
+    
+}
+.services h1 span{
+    font-family: 'Kaushan Script', cursive;
+    color: #ff523b;
+}
+.service-row {
+    margin-top: 10px;
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.service-1 {
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+    height: 140px;
+    width: 140px;
+}
+
+.service-2 {
+    border-radius: 50%;
+    float: right;
+    margin-right: 30px;
+    height: 150px;
+    width: 140px;
+    margin-left: 10px;
+}
+
+.service-1:hover,  .service-2:hover {
+    transform: scale(1.2);
+}
+
+/* -------------About Us Team Css---------------------------- */
+
+.team{
+    margin: 2rem 0;
+    background-color: #eee;
+    height: 30rem;
+}
+
+.team h2{
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.team .team-content{
+    display: flex;
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    justify-content: space-between;
+  }
+
+ .card .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  .card img{
+    width: 17rem;
+    height: 13rem;
+  }
+ .card button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+ .card a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+ .card button:hover, a:hover {
+    opacity: 0.7;
+  }
+
+ /* ====================================================
+                    About Us code starts here
+ ==================================================== */
+
+ 
+.wrapper{
+    background: #f3f3f3;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.4);
+}
+.wrapper h2{
+    text-align: center;
+}
+.wrapper hr{
+    width: 100px;
+    color: #333;
+    margin: 10px auto;
+}
+.wrapper .members{
+    display: flex;
+    justify-content: space-evenly;
+}
+.wrapper .team-mem{
+    margin: 8px;
+}
+.wrapper img{
+    width: 11rem;
+    height: 12rem;
+    border-radius: 50%;
+    margin: 10px;
+}
+.wrapper h4,p{
+    text-align: center;
+    font-size: 1rem;
+    margin: 7px;
+}
+ /* ====================================================
+                    About Us code ends here
+ ==================================================== */
+
+ 

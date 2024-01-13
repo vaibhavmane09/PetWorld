@@ -1,0 +1,32 @@
+<?php
+                            $connect=mysqli_connect("localhost","root","","petworld");
+                        if(!$connect)
+                        {
+                            die("could not connect database".mysqli_error());
+
+                        }
+                        else{
+                            mysqli_query($connect,$feedbackview) or die("could not execute feedback ");
+                            $slno=0;
+                            while($row=mysqli_fetch_array($result))
+                            $slno++;
+                        ?>
+                        <tr>
+                            <td><?php echo $slno;?></td>
+                            <td><?php echo $row['name'];?></td>
+                            <td><?php echo $row['mobno'];?></td>
+                            <td><?php echo $row['fdate'];?></td>
+                            <td><?php echo $row['fmsg'];?></td>
+                            <td><?php echo $row['rating'];?></td>
+                            <td><textarea value="<?php echo$row['replaymsg'];?>"></textarea></td>
+                            <td><input type="submit" name="reply" value="reply messag`e"/></td>
+                            
+
+                            
+                            
+                            
+                        </tr>
+                        <?php
+                        }
+
+                            $feedbackview="select * from feedback";

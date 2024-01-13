@@ -1,0 +1,123 @@
+/* Store Page CSS starts */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.categories{
+    margin: 70px 0;
+    width: 100%;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img{
+    width: 100%;
+    
+}
+.small-container{
+    max-width: 69.5rem;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 12px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    
+    /* box-shadow: 0 .2rem .5rem rgba(8, 8, 8, 0.3); */
+
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+
+
+}
+h4 input{
+    color: #555;
+    font-weight: normal;
+    border: none;
+    outline: none;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rating .fa{
+    color: #ff523b;
+}
+
+.price-buy{
+    display: flex;
+    justify-content: space-between;
+}
+.price-buy p {
+    display: flex;
+    margin: 1rem 0 0 0;
+    font-size: 1rem;
+}
+.price-buy p input{
+    width: 4rem;
+    outline: none;
+    font-size: 1rem;
+    border: none;
+    margin: -.1rem 0 0 .2rem;
+}
+.price-buy a{
+    color: #fff;
+    border: 1px solid #ff523b;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    font-weight: bolder;
+    background-color: #ff523b;
+    text-decoration: none;
+}
+.price-buy a:hover{
+    color: red;
+    background-color: #fff;
+    border: 1px solid #ff523b;
+}
+#cart{
+    font-size: 1rem;
+    font-weight: bold;
+    /* background-color: #555;
+    color: #fff; */
+    margin: 0 0 0 0 ;
+    border: 1px solid silver;
+    border-radius: 1rem;
+    padding: .1rem .5rem;
+}
+
+#cart:hover{
+    color: #fff;
+    background-color: #333;
+}
+.col-4:hover{
+    transform: translateY(-.7rem);
+}
+
+
+/* Store page CSS ends */

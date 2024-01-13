@@ -1,0 +1,1185 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400&family=Roboto:wght@500&family=Ubuntu:wght@500&display=swap');
+
+
+
+
+:root {
+    --main-color: #DD2F6E;
+    --color-dark: #1D2231;
+    --text-grey: #8390A2;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+.side-bar {
+    background-color: #fff;
+    width: 17rem;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    box-shadow: 0 .5rem 1.5rem rgba(8, 8, 8, 0.3);
+    z-index: 5;
+}
+
+.side-bar .profile-img i {
+    font-size: 3rem;
+    margin: 1rem 0 0 6rem;
+    color: #333;
+}
+
+.side-bar .profile-img h5 {
+    margin: 1rem 0 1.5rem 5rem;
+    color: #333;
+    font-size: 1.5rem;
+
+}
+
+.side-bar .item a {
+    color: #2d2d2d;
+    padding: 1rem 1.9rem;
+    display: block;
+    font-size: .9rem;
+    cursor: pointer;
+
+}
+
+.side-bar .item a.activeted {
+    color: #fff;
+    background-color: #a36060;
+    font-weight: bold;
+}
+
+.side-bar .item a.activeted1 {
+    color: #fff;
+    background-color: #555;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.side-bar .item a:hover {
+    /* border-radius: 2rem 2rem; */
+    background: #3e3e3e;
+    color: #fff;
+    transition: 0.8s ease;
+}
+
+.side-bar .item i {
+    margin-right: 20px;
+
+}
+
+.side-bar .item .dropdown {
+
+    margin-left: 1rem;
+    background-color: #fff;
+    display: none;
+}
+
+.side-bar .item .dropdown li a {
+    display: block;
+    cursor: pointer;
+    font-size: .79rem;
+
+    /* border: 1px solid silver; */
+}
+
+.side-bar .item .dropdown li i {
+    cursor: pointer;
+}
+
+.side-bar .item .dropdown li :hover {
+    background: #3e3e3e;
+    color: #fff;
+    border: none;
+    border-radius: .8rem;
+}
+
+.side-bar .item .dropdown li i:hover {
+    color: #fff;
+}
+
+.fa-chevron-down {
+    position: absolute;
+    right: 0;
+    padding: 2px;
+}
+
+
+
+
+.main-content {
+    margin-left: 17rem;
+}
+
+header {
+    display: flex;
+
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: calc(100% - 15rem);
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+
+}
+
+header h2 {
+    color: #555;
+    text-decoration: none;
+}
+
+header h2 a {
+    font-family: 'Courgette', cursive;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #333;
+}
+
+header h2 a span {
+    color: #e73b24;
+    font-family: 'Courgette', cursive;
+
+}
+
+header label span {
+    font-size: 1.7rem;
+    padding-right: 1rem;
+}
+
+.user-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.user-wrapper img {
+    border-radius: 50%;
+    margin-right: 1rem;
+
+}
+
+.user-wrapper small {
+    display: inline-block;
+    color: var(--text-grey);
+}
+
+
+
+main {
+    margin-top: 85px;
+    padding: 2rem 1.5rem;
+    background: #f1f5f9;
+    /* min-height: calc(100vh - 90px ); */
+    min-height: 100%;
+    z-index: -1;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+    min-height: 35%;
+    margin-bottom: -6rem;
+}
+
+.card-single {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    padding: 2rem;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0 5px 9px rgba(8, 8, 8, .8);
+    transition: 1s;
+}
+
+.card-single h1 {
+    color: #2d2d2d;
+}
+
+.card-single:hover {
+    transform: scale(1.1);
+}
+
+.card-single span:last-child span {
+    font-size: 3rem;
+    color: var(--main-color);
+
+}
+
+.card-single div:first-child span {
+    color: var(--text-grey);
+
+}
+
+.card-single:last-child {
+    background: var(--main-color);
+}
+
+.card-single:last-child h1,
+.card-single:last-child div:first-child span,
+
+.card-single:last-child div:last-child span {
+
+    color: #fff
+}
+
+/* table{
+    border-collapse: collapse;
+} */
+
+
+
+/*------------------------- start of admin chage password containr---------------------------*/
+/* ---------------------------------------------------------------------------------- */
+
+.chg-pwd {
+    width: 75%;
+    height: 70vh;
+    margin: 9rem 0 0 10rem;
+    background-color: #fff;
+    box-shadow: 1px 3px 17px 2px rgba(0, 0, 0, 0.66);
+    overflow: hidden;
+}
+
+.chg-pwd .title {
+    font-weight: bolder;
+    height: 3rem;
+    margin: 3rem 0 1rem 0;
+}
+
+.chg-pwd .chg-pwd-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .2s ease-in-out .7s;
+}
+
+.chg-pwd-form .title {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #e2331b;
+    margin-bottom: 1rem;
+}
+
+.chg-pwd-form .input-field {
+    max-width: 28rem;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #fff;
+    margin: 1rem 0;
+    border: 1.5px solid silver;
+    border-radius: 5.5rem;
+
+    display: grid;
+    /* to seperate the icons and input fields */
+    grid-template-columns: 15% 85%;
+
+    padding: 0 .4rem;
+}
+
+.chg-pwd-form .input-field i {
+    text-align: center;
+    margin-top: .8rem;
+    line-height: 1.6rem;
+    color: #3e3e3e;
+    font-size: 1.2rem;
+}
+
+.chg-pwd-form .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 2;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #333;
+}
+
+.chg-pwd-form .input-field input::placeholder {
+    color: #939292;
+    border: none;
+    background: none;
+    font-weight: 500;
+}
+
+.chg-pwd .chg-pwd-form .chg-buttons .btns {
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 4.5rem;
+    cursor: pointer;
+    background-color: #e73b24;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem;
+    transition: .5s;
+}
+
+.chg-pwd .chg-pwd-form .chg-buttons .btns:hover {
+    background-color: #fff;
+    color: #e73b24;
+    border: 1px solid silver;
+    transform: scale(1.05);
+}
+
+
+/*------------------------- end of admin chage password containr---------------------------*/
+/* ---------------------------------------------------------------------------------- */
+
+
+
+/*------------------------- Add product  CSS Starts here ---------------------------*/
+/* ---------------------------------------------------------------------------------- */
+
+
+.product-container {
+    width: 90%;
+    height: 50rem;
+    margin: 7rem 0 0 4rem;
+}
+
+.product-container fieldset {
+    width: 100%;
+    height: 45rem;
+    border: .1rem solid black;
+    box-shadow: 1px 3px 17px 2px rgba(0, 0, 0, 0.66);
+}
+
+.product-container legend {
+    text-align: center;
+    font-size: 2rem;
+    background-color: #eee;
+    border: .10rem solid black;
+}
+
+.product-container legend h2 {
+    margin: 0 2rem;
+
+}
+
+.product-container .grid-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 2.5rem 0 0 10rem;
+}
+
+.product-container .input-field {
+    font-size: 1.12rem;
+    margin-bottom: -1.6rem;
+}
+
+.product-container .input-field input {
+    width: 70%;
+    height: 2rem;
+    padding: 1rem;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 2rem;
+    background-color: transparent;
+}
+
+.product-container .input-field label {
+    color: #333;
+    font-weight: bold;
+}
+
+.product-container .input-field select option {
+    color: #333;
+}
+
+.product-container .input-field select {
+    width: 43%;
+    height: 1.8rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.product-container .input-field textarea {
+    width: 70%;
+    scroll-behavior: smooth;
+    border-radius: .5rem;
+    resize: none;
+    font-size: 1rem;
+    outline: none;
+    border: 1px solid;
+    padding: .5rem;
+    overflow-y: auto;
+
+}
+
+
+.product-container .flex-input {
+    display: flex;
+    width: 20%;
+    margin: 3.5rem 0 2rem 28rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-container .flex-input input {
+    width: 5.5rem;
+    height: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: .15rem;
+    color: #333;
+    background-color: #fff;
+    border: .1rem solid silver;
+    border-radius: 2rem;
+    transition: background-color 0.5s;
+}
+
+.product-container .flex-input input:hover {
+    color: #ff523b;
+    background-color: #eee;
+    font-weight: bold;
+    border: .12rem solid #ff523b;
+    transform: scale(1.1);
+}
+
+/*------------------------- Add Products  CSS ends here ---------------------------*/
+/* ---------------------------------------------------------------------------------- */
+
+
+
+/*------------------------- Add Trainer  CSS Starts here ---------------------------*/
+/* ---------------------------------------------------------------------------------- */
+
+.trainer-container {
+    width: 90%;
+    height: 50rem;
+    margin: 7rem 0 0 4rem;
+}
+
+.trainer-container fieldset {
+    width: 100%;
+    height: 48rem;
+    border: .1rem solid black;
+    margin: 4rem 0;
+    box-shadow: 1px 3px 17px 2px rgba(0, 0, 0, 0.66);
+}
+
+.trainer-container legend {
+    text-align: center;
+    font-size: 2rem;
+    background-color: #eee;
+    border: .10rem solid black;
+}
+
+.trainer-container legend h2 {
+    margin: 0 2rem;
+
+}
+
+.trainer-container .grid-inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2.5rem;
+    margin: 4rem 0 1rem 10rem;
+}
+
+.trainer-container .input-field {
+    font-size: 1.2rem;
+
+    margin-bottom: -1.6rem;
+}
+
+.trainer-container .gender-field {
+    margin: 0 1rem;
+    font-size: 1.12rem;
+}
+
+.trainer-container .gender-field input {
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.trainer-container .input-field input {
+    width: 60%;
+    height: 2rem;
+    padding: 1rem;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 2rem;
+    background-color: transparent;
+}
+
+.trainer-container .grid-inputs .input-field label,
+.gender-field label {
+    color: #333;
+    width: 50rem;
+    font-weight: bold;
+}
+
+
+
+.trainer-container .flex-input {
+    display: flex;
+    width: 20%;
+    margin: 1rem 0 2rem 28rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trainer-container .flex-input input {
+    width: 5.5rem;
+    height: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: .15rem;
+    color: #333;
+    background-color: #fff;
+    border: .1rem solid silver;
+    border-radius: 2rem;
+    transition: background-color 0.5s;
+}
+
+.trainer-container .flex-input input:hover {
+    color: #ff523b;
+    background-color: #eee;
+    font-weight: bold;
+    border: .12rem solid #ff523b;
+    transform: scale(1.1);
+}
+
+.trainer-container fieldset form .package-desc {
+    margin-left: 10rem;
+}
+
+.trainer-container fieldset form .package-desc label {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.trainer-container fieldset form .package-desc textarea {
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: .5rem 0 .5rem 0;
+    padding: .7rem;
+    resize: none;
+    overflow-y: auto;
+}
+
+/*------------------------- end of Add Trainer containr---------------------------*/
+/* ---------------------------------------------------------------------------------- */
+
+
+
+/*------------------------- start of admin view Feedback containr---------------------------*/
+/* ---------------------------------------------------------------------------------- */
+
+/* ==============================================================
+                 start of view feddback table
+================================================================= */
+
+.view-feedback-container {
+    width: 100%;
+    height: 40rem;
+}
+
+.view-feedback {
+    width: 93%;
+    height: 37rem;
+    background: transparent;
+    box-shadow: 1px 3px 17px 2px rgba(0, 0, 0, 0.66);
+    margin: 8rem 0 0 3rem;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.view-feedback .title {
+    margin: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: brown;
+}
+
+.view-feedback .view-feedback-table {
+    border: 1px solid black;
+    margin: 1rem 3rem;
+    text-align: center;
+    color: #333;
+    border-collapse: collapse;
+}
+
+.view-feedback .view-feedback-table tr th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.view-feedback .view-feedback-table tr td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+.view-feedback-table tr td textarea {
+    border: 1px solid #333;
+    resize: none;
+    overflow-y: auto;
+    padding: .5rem;
+}
+
+.view-feedback #send-btn {
+    width: 5rem;
+    height: 1.8rem;
+    background-color: transparent;
+    color: green;
+    border: 1px solid green;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.view-feedback #send-btn:hover {
+    color: #fff;
+    background-color: green;
+}
+
+.view-feedback .view-feedback-table tr td .dlt-btn {
+    width: 4rem;
+    height: 1.5rem;
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    border-radius: 1rem;
+    font-size: .8rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.view-feedback .view-feedback-table tr td .dlt-btn:hover {
+    color: #fff;
+    background-color: red;
+}
+
+
+
+/* ==============================================================
+                 end of view feddback table
+==============================================================  */
+
+/* ==============================================================
+                 start of queries table
+==============================================================  */
+
+
+.view-queries-container {
+    width: 100%;
+    height: 40rem;
+}
+
+.view-queries-container .view-queries {
+    width: 90%;
+    height: 38rem;
+    background: transparent;
+    box-shadow: 1px 3px 17px 2px rgba(0, 0, 0, 0.66);
+    margin: 8rem 0 0 4rem;
+
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.view-queries-container .view-queries .title {
+    margin: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: brown;
+}
+
+.view-queries-container .view-queries .view-queries-table {
+    border: 1px solid black;
+    margin: 1rem 3rem;
+    text-align: center;
+    color: #333;
+    border-collapse: collapse;
+}
+
+.view-queries-container .view-queries .view-queries-table tr th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.view-queries-container .view-queries .view-queries-table tr td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+.view-queries-container .view-queries-table tr .dlt-btn {
+    width: 4rem;
+    height: 1.5rem;
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    border-radius: 1rem;
+    font-size: .8rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.view-queries-container .view-queries-table tr .dlt-btn:hover {
+    color: #fff;
+    background-color: red;
+}
+
+
+/* ==============================================================
+                 end of queries table
+==============================================================  */
+
+/* ==============================================================
+                 Start of pet-allocate table
+==============================================================  */
+
+.pet-allocation-container{
+
+    width: 95%;
+    height: 70vh;
+    margin: 6rem 0 0 2rem;
+}
+.pet-allocation-container h2{
+    color: brown;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 0 0 .7rem;
+}
+.pet-allocation-container .pet-allocate{
+    width: 100%;
+    height: 80vh;
+    margin-top: 1rem;
+    border: .1rem solid black;
+    background-color: #fff;
+    overflow: scroll;
+    box-shadow: 1px 3px 17px 2px rgba(0, 0, 0, 0.66);
+}
+.pet-allocation-container table{
+    width: 280%;
+    justify-content: center;
+    border: .1rem solid;
+    margin: 1rem 2rem;
+}
+
+.pet-allocation-container table tr th{
+    font-size: 1.25rem;
+    font-weight: bolder;
+    height: 2rem;
+    padding: .5rem 2rem;
+}
+
+.pet-allocation-container table td{
+    font-size: 1rem;
+    text-align: center;
+    height: 2.5rem;
+    padding: 1rem;
+}
+
+.pet-allocation-container table td input{
+    width: 10rem;
+    height: 1.6rem;
+    background: transparent;
+    padding: .3rem;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    
+}
+.pet-allocation-container table td select{
+    width: 10rem;
+    height: 1.6rem;
+    background: transparent;
+    padding: .3rem;
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    
+}
+.pet-allocation-container #send-btn {
+    width: 4rem;
+    height: 1.9rem;
+    background-color: transparent;
+    color: green;
+    border: 1px solid green;
+    border-radius: 1rem;
+    font-size: .8rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.pet-allocation-container  #send-btn:hover {
+    color: #fff;
+    background-color: green;
+}
+
+
+/* ==============================================================
+                 end of pet-allocate table
+==============================================================  */
+
+/* ==============================================================
+                 Start of View-Customer & View-Product $ View-Orders table
+==============================================================  */
+
+
+/* #view-Container{
+    width: 99%;
+    height: 70vh;
+    margin: 6rem 0 0 2rem;
+} */
+
+.view-Container{
+
+    width: 95%;
+    height: 70vh;
+    margin: 6rem 0 0 2rem;
+}
+.view-Container h2{
+    color: brown;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 0 0 .7rem;
+}
+.view-Container .view-product{
+    width: 100%;
+    height: 83vh;
+    margin-top: 1rem;
+    background-color: #fff;
+    overflow: scroll;
+    box-shadow: 1px 3px 17px 2px rgba(0, 0, 0, 0.66);
+}
+.view-Container table{
+    width: 100%;
+    justify-content: center;
+    border: .1rem solid;
+    margin: 1rem 2rem;
+}
+
+.view-Container table th{
+    font-size: 1.2rem;
+    padding: .7rem;
+    font-weight: bold;
+    height: 2rem;
+}
+
+.view-Container table td{
+    font-size: 1rem;
+    text-align: center;
+    height: 2rem;
+    padding: .5rem;
+}
+
+.view-Container table td input{
+    width: 7rem;
+    height: 1.6rem;
+    background: transparent;
+    padding: .3rem;
+    border: none;
+}
+
+.view-Container #send-btn{
+    width: 5rem;
+    height: 2rem;
+    margin: .5rem;
+    text-decoration: none;
+    background-color: transparent;
+    color: green;
+    border: 1px solid green;
+    border-radius: 1rem;
+    font-size: .8rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.view-Container #send-btn:hover {
+    color: #fff;
+    background-color: green;
+}
+.view-Container #dlt-btn {
+    width: 5rem;
+    height: 2rem;
+    margin: .5rem;
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    border-radius: 1rem;
+    font-size: .8rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.view-Container #dlt-btn:hover {
+    color: #fff;
+    background-color: red;
+}
+
+
+/* ==============================================================
+                 end of view-Customer & View-Product & View-Orders  table
+==============================================================  */
+
+/* ==============================================================
+                 Start of view-Trainer table
+==============================================================  */
+
+
+.view-trainer-container {
+    width: 100%;
+    height: 40rem;
+}
+
+.view-trainer-container .view-trainer {
+    width: 95%;
+    height: 38rem;
+    background: transparent;
+    box-shadow: 1px 3px 17px 2px rgba(0,0,0,0.66);
+    margin: 6.5rem 0 0 2rem;
+    
+    display: flex;
+    flex-direction: column;
+
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.view-trainer-container .view-trainer .title {
+    margin: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: brown;
+}
+
+.view-trainer-container .view-trainer .view-trainer-table {
+    border: 1px solid black;
+    margin: 1rem 3rem;
+    text-align: center;
+    color: #333;
+    border-collapse: collapse;
+}
+
+.view-trainer-container .view-trainer .view-trainer-table tr th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.view-trainer-container .view-trainer .view-trainer-table tr td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+.view-trainer-container .view-trainer .view-trainer-table tr td input{
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.view-trainer-container .view-trainer-table tr td textarea {
+    border: 1px solid #333;
+    resize: none;
+    overflow-y: auto;
+    padding: .5rem;
+}
+
+.view-trainer-container  #send-btn {
+    width: 4rem;
+    height: 1.5rem;
+    background-color: transparent;
+    color: green;
+    border: 1px solid green;
+    border-radius: 1rem;
+    font-size: .8rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.view-trainer-container  #send-btn:hover {
+    color: #fff;
+    background-color: green;
+}
+
+.view-trainer-container #dlt-btn {
+    width: 4rem;
+    height: 1.5rem;
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    border-radius: 1rem;
+    font-size: .8rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.view-trainer-container .view-trainer-table tr td #dlt-btn:hover {
+    color: #fff;
+    background-color: red;
+}
+
+.view-trainer-container .view-trainer-table tr td .ratings {
+    font-size: .7rem;
+    color: #FF9529;
+}
+
+/* ==============================================================
+                 end of view-Trainer table
+==============================================================  */
+
+/* ==============================================================
+                 Start of Reprots table
+==============================================================  */
+
+.main-report-container{
+    width: 95%;
+    height: 41rem;
+    margin: 6rem 0 .5rem 1.5rem;
+    border: 1px solid ;
+}
+
+.main-report-container h2{
+    font-size: 2rem;
+    margin: 2rem;
+    color: brown;
+}
+
+.main-report-container h2 hr{
+    width: 20%;
+    margin: .3rem 0;
+}
+
+.main-report-container .report-container form{
+    width: 95%;
+    height: 8rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem;
+    border: 2px solid;
+    border-radius: 2rem;
+}
+
+.main-report-container .report-container form .input-field{
+    width: 29%;
+    border: 2px solid;
+    border-radius: 2rem;
+    padding: .5rem;
+}
+
+.main-report-container .report-container form .input-field label{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 .5rem;
+}
+
+.main-report-container .report-container form .input-field input{
+    width: 10rem;
+    height: 2rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.main-report-container .report-container form .input-btn{
+    width: 10rem;
+    height: 2rem;
+
+}
+
+.main-report-container  .report-container form .input-btn input{
+    width: 12rem;
+    font-size: 1rem;
+    text-align: center;
+    padding: .4rem;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 2rem;
+    color: #fff;
+    outline: none;
+    background-color: #e73b24;
+    transition: .5s;
+}
+
+.main-report-container  .report-container form .input-btn input:hover{
+    color: #e73b24;
+    background-color: #f1f5f9;
+}
+
+/* --------- Report Result Container CSS---------   */
+
+.main-report-container .report-result{
+    width: 95%;
+    height: 53%;
+    margin: 1.5rem;
+    overflow: auto;
+    padding: 1rem;
+    border: 2px solid;
+}
+#training{
+    width: 95%;
+    height: 80%;
+    margin: 1.5rem;
+    overflow: auto;
+    padding: 1rem;
+    border: 2px solid;   
+}
+#training table{
+    height: 100%;
+}
+.main-report-container .report-result table{
+    width: 100%;
+}
+
+.main-report-container .report-result table  tr th{
+    width: 1rem;
+    height: 2.5rem;
+    padding: 1rem;
+    border: 1px solid silver;
+    font-size: 1rem;
+}
+
+.main-report-container .report-result table  tr td{
+    border: 1px solid silver;
+    outline: none;
+    padding: .5rem;
+    background-color: transparent;
+    text-align: center;
+}
+
+
+/* ==============================================================
+                 end of End-Reports table
+==============================================================  */

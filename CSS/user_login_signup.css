@@ -1,0 +1,444 @@
+/*=========================================================================
+                    SIGN-IN (user & admin) styling starts
+=========================================================================== */
+
+
+
+.sign-in-wrapper {
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    background-color: #fff;
+    box-shadow: 1px -1px 8px 0px rgba(0,0,0,0.75);
+    overflow: hidden;
+    margin: 1rem 10%;
+    /* z-index: -1; */
+}
+
+.sign-in-wrapper .forms-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.sign-in-sign-up form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .2s ease-in-out .7s;
+}
+/* .sign-in-sign-up form.user-sign-up-form{
+
+} */
+
+.sign-in-sign-up form.user-sign-in-form .admin-trainer a{
+    width: 15rem;
+    margin: 2rem 0 0 0;
+    padding: .3rem 1rem;
+    border-radius: 2rem;
+    font-size: .85rem;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #333;
+    text-decoration: none;
+    /* font-family: 'Courgette', cursive; */
+
+}
+.sign-in-sign-up form.user-sign-in-form .admin-trainer a:hover{
+    border: 1px solid #e73b24;
+    font-weight: 300;
+    color: #fff;
+    background-color: #e73b24;
+
+}
+.sign-in-sign-up form.user-sign-in-form .title,
+.sign-in-sign-up form.user-sign-up-form .title {
+    font-size: 2.5rem;
+    color: brown;
+    margin-bottom: .5rem;
+    margin-top: -.5rem;
+}
+
+.sign-in-sign-up form.user-sign-in-form .input-field {
+    max-width: 38rem;
+    width: 80%;
+    height: 3rem;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 5.5rem;
+    border: 1px solid silver;
+    display: grid;
+    /* to seperate the icons and input fields */
+    grid-template-columns: 15% 85%;
+
+    padding: 0 .4rem;
+}
+
+.sign-in-sign-up form.user-sign-in-form .input-field i {
+    text-align: center;
+    line-height: 3rem;
+    color: #6d6a6a;
+    font-size: 1.5rem;
+}
+
+.sign-in-sign-up form.user-sign-in-form .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.sign-in-sign-up form.user-sign-in-form .input-field input::placeholder,
+.sign-in-sign-up form.user-sign-up-form .input-field input::placeholder {
+    color: #333;
+    font-weight: 500;
+}
+
+.sign-in-sign-up form.user-sign-in-form .log-btn,
+.sign-in-sign-up form.user-sign-up-form .log-btn{
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 4.5rem;
+    cursor: pointer;
+    background-color: wheat;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1.3rem 0;
+}
+
+.sign-in-sign-up form.user-sign-in-form a.forget-pass,
+.sign-in-sign-up form.user-sign-up-form a.forget-pass {
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: #575555;
+}
+
+.sign-in-sign-up form.user-sign-in-form .log-btn:hover,
+.sign-in-sign-up form.user-sign-up-form .log-btn:hover {
+    background-color: #f7c4c4;
+    color: #333;
+    border: 1px solid silver;
+    transform: scale(1.05);
+}
+
+.sign-in-sign-up form.user-sign-in-form .social-text {
+    padding: 1rem 0;
+    font-size: 1rem;
+    color: #575555;
+}
+
+.sign-in-sign-up .social-media {
+    display: flex;
+}
+
+.sign-in-sign-up .social-media .social-icons {
+    height: 3rem;
+    width: 3rem;
+    font-size: 1.7rem;
+    margin: .45rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: .1rem 1rem .2rem;
+    transition: .5s;
+}
+
+.sign-in-sign-up .social-media .social-icons i {
+    font-size: 1.7rem;
+    color: rgb(61, 60, 60);
+}
+
+.sign-in-sign-up .social-media .social-icons:hover,
+.sign-in-sign-up .social-media .social-icons i:hover {
+    background-color: black;
+    color: #fff;
+    border: none;
+}
+
+/* --------------------------------------------- */
+
+
+/* Style the form */
+
+.sign-in-sign-up .user-sign-up-form{
+    margin: -1rem 0 0 -1rem;
+}
+.sign-in-sign-up .title{
+    font-size: 2.5rem;
+    color: brown;
+    margin-bottom: .5rem;
+    margin-top: -4rem;
+}
+.sign-in-sign-up .user-sign-up-form .grid-inputs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sign-in-sign-up .user-sign-up-form .grid-inputs .input-field{
+    max-width: 16rem;
+    width: 100%;
+    height: 2.5rem;
+    background-color: #fff;
+    margin: 1rem 0 1rem 2rem;
+    border: 1px solid silver;
+    border-radius: 5.5rem;
+
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 .4rem;
+
+
+}
+.sign-in-sign-up .user-sign-up-form .grid-inputs .input-field i{
+    text-align: center;
+    line-height: 2.3rem;
+    color: #6d6a6a;
+    font-size: 1rem;
+
+}
+.sign-in-sign-up .user-sign-up-form .grid-inputs .input-field input{
+    background: none;
+    line-height: 2;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #333;
+    text-transform: none;
+    border: none;
+    outline: none;
+
+}
+.sign-in-sign-up .user-sign-up-form .flex-inputs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#address{
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: 1px solid silver;
+    border-radius: 2rem;
+    padding: 1rem;
+    outline: none;
+    margin-left: 4rem;
+    margin-bottom: 1rem;
+}
+.sign-in-sign-up .user-sign-up-form .flex-inputs .t-c{
+    font-size: .8rem;
+}
+.sign-in-sign-up .user-sign-up-form .flex-inputs .sign-up-link-text{
+    font-size: .8rem;
+}
+#sign-up-btn{
+    margin: .6rem 0;
+}
+
+/* -------------------- code to stack both forms on each other -------------------- */
+
+.sign-in-sign-up {
+    position: absolute;
+    top: 5%;
+    left: 75%;
+    transform: translate(-50%, 5%);
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 5;
+    transition: 1s .7s ease-in-out;
+}
+
+/* code to get each form starting from column1, row1 to column2, row2 */
+.sign-in-sign-up form {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    overflow: hidden;
+}
+
+
+/* -------------------- code to hide signup sign in page -------------------- */
+
+form.user-sign-in-form {
+    z-index: 2;
+}
+
+form.user-sign-up-form {
+    z-index: 1;
+    opacity: 0;
+}
+
+
+.sign-in-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 200rem;
+    height: 200rem;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, #eec4c4, #4d4b4a);
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    z-index: 6;
+    transition: 1.8s;
+}
+
+
+/* ============ panel container starts here ============ */
+
+
+.panel .content .img {
+    width: 100%;
+    transition: 1.5s .4s ease-in-out;
+}
+
+.left-panel .content .img {
+    width: 30rem;
+    margin-bottom: -16rem;
+}
+
+.right-panel .content .img {
+    width: 30rem;
+    margin-bottom: -16rem;
+}
+
+.panels-container {
+    width: 100%;
+    position: absolute;
+    height: 70%;
+    top: 0;
+    left: 0;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align-last: center;
+    margin-top: -5rem;
+    z-index: 7;
+}
+
+.panels-container .left-panel {
+    padding: 3rem 17% 2rem 12%;
+    pointer-events: all;
+}
+
+.panels-container .right-panel {
+    padding: 3rem 12% 2rem 17%;
+    pointer-events: none;
+}
+
+.panel .content {
+    color: #fff;
+    transition: .9s .6s ease-in-out;
+}
+
+.panel .content .title {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+.panel .content p {
+    font-size: 1.2rem;
+    text-transform: none;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.panel .content .btn.transparent {
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 4rem;
+    width: 10rem;
+    height: 3rem;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    margin: 1rem 0 0 9rem;
+}
+
+.panel .content .btn:hover {
+    background-color: none;
+    color: #333;
+    border: 1px solid silver;
+    transform: scale(1.05);
+}
+
+
+.right-panel .content,
+.right-panel .img {
+    transform: translateX(80rem);
+}
+
+
+/* ---------------- ANIMATIONS CODE FOR CHANGING FORMS ---------------- */
+
+.sign-in-wrapper.form-animation::before {
+    transform: translate(100%, -50%);
+    right: 52%;
+}
+
+.sign-in-wrapper.form-animation .left-panel .img,
+.sign-in-wrapper.form-animation .left-panel .content {
+    transform: translate(-80rem);
+
+}
+
+.sign-in-wrapper.form-animation .right-panel .content,
+.sign-in-wrapper.form-animation .right-panel .img {
+    transform: translateX(0);
+}
+
+.sign-in-wrapper.form-animation .left-panel{
+    pointer-events: none;
+}
+
+
+.sign-in-wrapper.form-animation .right-panel{
+    pointer-events: all;
+}
+
+.sign-in-wrapper.form-animation .sign-in-sign-up {
+    left: 25%;
+}
+
+.sign-in-wrapper.form-animation .sign-in-sign-up .user-sign-in-form {
+    z-index: 1;
+    opacity: 0;
+}
+
+.sign-in-wrapper.form-animation .sign-in-sign-up .user-sign-up-form {
+    z-index: 2;
+    opacity: 1;
+}
+
+
+
+/* =============== media queries for responsiveness =============== */
+
+
+
+
+
+
+/*  =========================================================================
+                    SIGN-IN (user & admin) styling end
+=========================================================================== */

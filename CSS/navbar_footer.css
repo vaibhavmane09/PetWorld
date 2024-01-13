@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400&family=Roboto:wght@500&family=Ubuntu:wght@500&display=swap');
+
+/* --------------- Navigation / Menu Bar ------------- */
+
+.container{
+    max-width: 100%;
+    margin: auto;
+    
+}
+
+.header{
+    /* background: radial-gradient(#e4c0c0,#656362); */
+    background-color: #fcfcfc;
+    /* color: black; */
+    
+}
+.header .row{
+    margin-top: 70px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 1.3rem;
+    box-shadow: 0 2px 25px rgba(0,0,0,0.83);
+    border: 1px solid silver;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 1.3rem;
+    padding: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0c0000;
+}
+
+.navbar .logo a{
+    font-family: 'Courgette', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: .1rem;
+}
+
+.navbar .logo a span {
+    color: #e73b24;
+    font-family: 'Courgette', cursive;
+}
+
+nav ul li a:hover, .activeted {
+    color: #e73b24;
+    font-weight: bold;
+}
+nav ul li:hover,
+.navbar .logo:hover {
+    
+    transform: scale(1.05);
+}
+
+
+.sub-menu{
+    display: none;
+    top: 9.8%;
+    position: relative;
+    
+}
+
+.sub-menu ul{
+    background-color: #ececec;
+    position: absolute;
+    top: 1.5rem;
+    z-index: 1000;
+    font-size: .8rem;
+
+}
+.navbar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: #0a0a0a;
+    /* margin-top: 8px; */
+    margin-left: -8px;
+}
+
+.navbar ul li:hover .sub-menu ul{
+    display: block;
+    margin: 6px;
+}
+
+.navbar ul li:hover .sub-menu ul li{
+    width: 100%;
+    padding: 5px;
+    display: block;
+    border-bottom: 1px #333;
+    background-color: relative;
+    transition: 0.5  ease;
+    text-align: center;
+    border-radius: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: #080000;
+}
+p{
+    color: #110e0e;
+}
+/* -----------------------Navigation Bar End----------------------- */
+
+
+/* --------------------- Footer Start----------------- */
+
+.footer{
+    background-color: black;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 16px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+    text-align: center;
+}
+.footer ul{
+    align-items: center;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: #8a8a8a;
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-2 a{
+    font-family: 'Courgette', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    color: wheat;
+    letter-spacing: .1rem;
+}
+.footer-col-2 a span{
+    font-family: 'Courgette', cursive;
+    color: #ff523b;
+}
+
+.footer-col-3, .footer-col-4{
+    flex-basis: 22%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+
+}
+.app-logo img{
+    width: 120px;
+}
+.footer hr{
+    border: none;
+    background-color: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
+.copyright a{
+    color: #8a8a8a;
+}
+
+.buton a{
+    font-size: .7rem;
+}
+.footer-btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #ffffff;
+    padding: .5rem 1.6rem;
+    margin: 1rem 1rem -1rem 0;
+    border-radius: 2rem;
+    transition: background-color 0.5s;
+}
+
+.footer-btn:hover{
+    background: #6e4343;
+    color: white;
+    transform: scale(1.1);
+}
