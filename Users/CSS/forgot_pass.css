@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+
+
+body {
+  background-image: url('../../IMG/background.jpg');
+  background-size: cover;
+  color: white;
+  font-family: Sans-Serif;
+}
+
+.wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25rem;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 25px;
+  border-radius: 0.8rem;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+.wrapper img {
+  width: 100px;
+}
+
+.wrapper .logo {
+  margin-left: -6rem;
+}
+
+.wrapper .logo a {
+  color: #333333;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Courgette', cursive;
+  font-weight: bolder;
+}
+
+.wrapper .logo a span {
+  color: #e73b24;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin-top: -.2rem;
+  font-family: 'Courgette', cursive;
+}
+
+.wrapper h1 {
+  font-size: 30px;
+}
+
+.wrapper h3 {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.wrapper .field {
+  height: 60px;
+}
+
+#cimg {
+  margin-left: 5.5rem;
+  cursor: pointer;
+}
+
+#capcha {
+  width: 6rem;
+  padding: 0 .5rem;
+  padding-right: 1rem;
+}
+
+#capcha1 {
+  width: 8rem;
+}
+
+.wrapper input[ type=text] {
+  width: 15.5rem;
+  height: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  padding-left: 35px;
+}
+
+.wrapper span {
+  position: absolute;
+  color: black;
+  padding: 4px;
+}
+
+.wrapper button,
+#send-btn {
+  width: 17.6rem;
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  color: white;
+  transition: 0.5s;
+  background-color: #007dff;
+}
+
+.wrapper button:hover,
+#send-btn:hover {
+  color: #007dff;
+  background-color: #fff;
+}
+
+.link1 a {
+  text-decoration: none;
+  color: #007dff;
+}
+
+#verify_otp {
+  width: 7rem;
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  color: white;
+  transition: 0.5s;
+  background-color: #007dff;
+  margin-bottom: 1rem;
+  padding: .4rem .8rem;
+}
+
+#verify_otp:hover {
+  color: #007dff;
+  background-color: #fff;
+}
+
+#resend_otp {
+  width: 7rem;
+  height: 2rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  color: white;
+  transition: 0.5s;
+  background-color: brown;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  padding: .4rem .8rem;
+}
+
+#resend_otp:hover {
+  color: brown;
+  background-color: #fff;
+}

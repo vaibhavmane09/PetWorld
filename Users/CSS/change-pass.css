@@ -1,0 +1,102 @@
+/*  =========================================================================
+                            CHANGE PASSWORD styling Starts
+=========================================================================== */
+
+
+.chg-pwd {
+    width: 70%;
+    height: 65vh;
+    margin: 3rem 0 3rem 15%;
+    background-color: #fff;
+    box-shadow: 1px 3px 17px 2px rgba(0,0,0,0.66);
+    overflow: hidden;
+}
+
+.chg-pwd .title {
+    font-weight: bolder;
+    height: 3rem;
+    margin: 3rem 0 1rem 0;
+}
+
+.chg-pwd .chg-pwd-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .2s ease-in-out .7s;
+}
+
+.chg-pwd-form .title {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #e2331b;
+    margin-bottom: 1rem;
+}
+
+.chg-pwd-form .input-field {
+    max-width: 28rem;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #fff;
+    margin: 1rem 0;
+    border: 1.5px solid silver;
+    border-radius: 5.5rem;
+    background: transparent;
+    display: grid;
+    /* to seperate the icons and input fields */
+    grid-template-columns: 15% 85%;
+
+    padding: 0 .4rem;
+}
+
+.chg-pwd-form .input-field i{
+    text-align: center;
+    margin-top: .8rem;
+    line-height: 1.6rem;
+    color: #3e3e3e;
+    font-size: 1.2rem;
+}
+
+.chg-pwd-form .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 2;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #333;
+}
+
+.chg-pwd-form .input-field input::placeholder {
+    color: #939292;
+    border: none;
+    background: none;
+    font-weight: 500;
+}
+
+.chg-pwd .chg-pwd-form .chg-buttons .btns {
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 4.5rem;
+    cursor: pointer;
+    background-color: #e73b24;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem;
+    transition: .5s;
+}
+
+.chg-pwd .chg-pwd-form .chg-buttons .btns:hover {
+    background-color: #fff;
+    color: #e73b24;
+    border: 1px solid silver;
+    transform: scale(1.05);
+}
+
+
+
+/*  =========================================================================
+                            CHANGE PASSWORD styling ends
+=========================================================================== */

@@ -1,0 +1,994 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@400&family=Roboto:wght@500&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Marck+Script&family=Poppins:wght@400;500;600&family=Roboto:wght@500&family=Ubuntu:wght@500&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins',sans-serif;
+    text-transform: capitalize;
+}
+
+.side-bar
+{
+	background-color: #fff;
+	width: 15rem;
+	height:100%;
+	position:fixed;
+	left:0;
+	top:0;	
+	overflow:auto;
+    box-shadow: 0 .5rem 1.5rem rgba(8, 8, 8, 0.3);
+    z-index: 5;
+}
+.side-bar .profile-img i
+{
+    font-size: 3rem;
+    margin: 1rem 0 0 6rem;
+    color: #333;
+}
+
+.side-bar .profile-img h5
+{
+    margin: 1rem 0 1.5rem 5rem;
+	color:#333;
+	font-size:1.5rem;
+	
+}
+.side-bar .item a
+{
+	color: #2d2d2d;
+	padding:1rem 1.9rem;
+	display:block;
+	font-size: 1rem;
+	cursor:pointer;
+	
+}
+.side-bar .item a.activeted {
+    color: #fff;
+    background-color: #a36060;
+    font-weight: bold;
+}
+
+.side-bar .item a.activeted1 {
+    color: #fff;
+    background-color: #555;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.side-bar .item a:hover
+{
+    /* border-radius: 2rem 2rem; */
+   background: #3e3e3e;
+   color: #fff;
+   transition: 0.8s ease;
+}
+.side-bar .item i
+{
+	margin-right:20px;
+	
+}
+.side-bar .item .dropdown
+{
+
+    margin-left: 1rem;
+	background-color:#fff;
+	display:none;
+}
+.side-bar .item .dropdown li a
+{
+	display:block;
+	cursor:pointer;
+    font-size: .79rem;
+	
+    /* border: 1px solid silver; */
+}
+.side-bar .item .dropdown li i
+{
+	cursor:pointer;	
+}
+.side-bar .item .dropdown li :hover
+{
+	background: #3e3e3e;
+    color: #fff;
+	border: none;    
+	border-radius: .8rem;
+}
+.side-bar .item .dropdown li i:hover {
+    color: #fff;
+}
+
+.fa-chevron-down
+   {
+    position:absolute;
+    right: 0;
+    padding:2px;
+   }
+
+   .main-content{
+    margin-left: 15rem;
+}
+header{
+    display: flex;
+
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: calc(100% - 15rem);
+    top: 0;
+    z-index: 100;
+    background-color: #fff;
+
+}
+header h2{
+    color:#555;
+    text-decoration: none;
+}
+header h2 a{
+    font-family: 'Courgette', cursive;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #333;
+}
+header h2  a span{
+    color: #e73b24;
+    font-family: 'Courgette', cursive;
+
+}
+header .profile{
+    width: 11rem;
+    display: block;
+    font-size: 1.2rem;
+    margin: 1rem 0 .5rem 0;
+    font-weight: bold;
+    text-decoration : none;
+}
+header .profile a{
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .1rem;
+    padding-right: 1rem;
+    transition: .5s;
+    
+}
+header .profile a:hover, .activated1{
+    color: #e2331b;
+    transform: scale(1.3);
+}
+
+
+
+main .train-rules{
+    width: 90%;
+    height: 83vh;
+    margin: 6rem 2rem 2rem 4rem;
+    box-shadow: 0 .5rem 1.5rem rgba(8, 8, 8, 0.3);
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+main .train-rules h2{
+    font-size: 2rem;
+    color: #e2331b;
+    letter-spacing: .1rem;
+    margin: 1rem 0 2rem 0;
+}
+
+main .train-rules h2 hr{
+    width: 26%;
+    margin: .4rem .4%;
+}
+
+main .train-rules h3{
+    font-size: 1.4rem;
+    margin: 1rem 2rem;
+    color: #2d2d2d;
+    text-transform: none;
+}
+
+main .train-rules p{
+    font-size: 1.12rem;
+    margin: 1rem 2.5rem;
+    text-transform: none;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+main .train-rules p span{
+    font-size: 1.2rem;
+    color: #e2331b;
+    font-weight: bold;
+}
+/* ==============================================================
+                 end of main home page table
+==============================================================  */
+
+/* ==============================================================
+                 Start  of Trainer Change Password table
+==============================================================  */
+.chg-pwd {
+    width: 75%;
+    height: 70vh;
+    margin: 9rem 0 0 10rem;
+    background-color: #fff;
+    box-shadow: 1px 3px 17px 2px rgba(0,0,0,0.66);
+    overflow: hidden;
+}
+
+.chg-pwd .title {
+    font-weight: bolder;
+    height: 3rem;
+    margin: 3rem 0 1rem 0;
+}
+
+.chg-pwd .chg-pwd-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: .2s ease-in-out .7s;
+}
+
+.chg-pwd-form .title {
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: #e2331b;
+    margin-bottom: 1rem;
+}
+
+.chg-pwd-form .input-field {
+    max-width: 28rem;
+    width: 100%;
+    height: 3.5rem;
+    background-color: #fff;
+    margin: 1rem 0;
+    border: 1.5px solid silver;
+    border-radius: 5.5rem;
+
+    display: grid;
+    /* to seperate the icons and input fields */
+    grid-template-columns: 15% 85%;
+
+    padding: 0 .4rem;
+}
+
+.chg-pwd-form .input-field i{
+    text-align: center;
+    margin-top: .8rem;
+    line-height: 1.6rem;
+    color: #3e3e3e;
+    font-size: 1.2rem;
+}
+
+.chg-pwd-form .input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 2;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #333;
+}
+
+.chg-pwd-form .input-field input::placeholder {
+    color: #939292;
+    border: none;
+    background: none;
+    font-weight: 500;
+}
+
+.chg-pwd .chg-pwd-form .chg-buttons .btns {
+    width: 8rem;
+    height: 2.5rem;
+    border-radius: 4.5rem;
+    cursor: pointer;
+    background-color: #e73b24;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem;
+    transition: .5s;
+}
+
+.chg-pwd .chg-pwd-form .chg-buttons .btns:hover {
+    background-color: #fff;
+    color: #e73b24;
+    border: 1px solid silver;
+    transform: scale(1.05);
+
+}
+
+/* ==============================================================
+                 end of Change password table
+==============================================================  */
+
+/* ==============================================================
+                 Start of Add-Pet-Progress table
+==============================================================  */
+
+
+.progress-container{
+    width: 90%;
+    height: 40rem;
+    margin: 6rem 0 0 4rem;
+}
+
+.progress-container fieldset{
+    width: 100%;
+    height: 39em;
+    border: .1rem solid black;
+    margin: 4rem 0;
+    box-shadow: 1px 3px 17px 2px rgba(0,0,0,0.66);
+    overflow-y: auto;
+}
+
+.progress-container legend{
+    text-align: center;
+    font-size: 2rem;
+    background-color: #eee;
+    border: .10rem solid black;
+}
+.progress-container legend h2{
+    margin: 0 2rem;
+
+}
+.progress-container .grid-inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin: 4rem 0 2rem 10rem ;
+}
+
+.progress-container .input-field{
+    font-size: 1.12rem;
+    margin-bottom: -1.6rem;
+}
+
+.progress-container .input-field input{
+    width: 55%;
+    height: 2rem;
+    padding: 1rem;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 2rem;
+    background-color: transparent;
+}
+.progress-container .input-field label{
+    color: #333;
+    font-weight: bold;
+}
+.progress-container .input-field select option{
+    color: #333;
+}
+
+.progress-container .input-field select{
+    width: 33%;
+    height: 1.8rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+.input-field textarea{
+    width: 55%;
+    scroll-behavior:smooth ;
+    border-radius: .5rem;
+    resize: none;
+    font-size: 1rem;
+    outline: none;
+    padding: .5rem;
+    overflow-y: auto;
+
+}
+
+.progress-container #petid{
+    width: 16rem;
+    height: 2.2rem;
+}
+
+
+.progress-container .flex-input{
+    display: flex;
+    width: 20%;
+    margin: 1rem 0 2rem 28rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.progress-container .flex-input input{
+    width: 5.5rem;
+    height: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: .15rem;
+    color: #333;
+    background-color: #fff;
+    border: .1rem solid silver;
+    border-radius: 2rem;
+    transition: background-color 0.5s;
+}
+.progress-container .flex-input input:hover{
+    color: #ff523b;
+    background-color: #eee;
+    font-weight: bold;
+    border: .12rem solid #ff523b;
+    transform: scale(1.1);
+}
+
+.progress-container fieldset form .package-desc {
+    margin-left: 10rem;
+}
+
+.progress-container  fieldset form .package-desc label {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.progress-container  fieldset form .package-desc textarea {
+    border: 1px solid black;
+    border-radius: 1rem;
+    margin: .5rem 0;
+    padding: .7rem;
+    resize: none;
+    overflow-y: auto;
+}
+
+
+
+/* ==============================================================
+                 end of Add-Pet-Progress table
+==============================================================  */
+
+/* ==============================================================
+                 Start of Allocated Pet table
+==============================================================  */
+
+
+.allocated-pet-container{
+
+    width: 95%;
+    height: 70vh;
+    margin: 6rem 0 0 2rem;
+}
+.allocated-pet-container h2{
+    color: brown;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 0 0 .7rem;
+}
+.allocated-pet-container .allocated{
+    width: 100%;
+    height: 80vh;
+    margin-top: 1rem;
+    border: .1rem solid black;
+    background-color: #fff;
+    overflow: scroll;
+    box-shadow: 1px 3px 17px 2px rgba(0, 0, 0, 0.66);
+}
+.allocated-pet-container table{
+    width: 100%;
+    justify-content: center;
+    border: .1rem solid;
+    margin: 1rem 2rem;
+}
+
+.allocated-pet-container table th{
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 2rem;
+    text-align: center;
+}
+
+.allocated-pet-container table td{
+    font-size: 1rem;
+    text-align: center;
+    height: 2rem;
+}
+
+.allocated-pet-container table td input{
+    width: 7rem;
+    height: 1.6rem;
+    background: transparent;
+    padding: .3rem;
+    border: none;
+    text-align: center;
+    transform: scale(1.1);
+}
+
+.allocated-pet-container table td .send-btn{
+    width: 6rem;
+    height: 1.7rem;
+    text-decoration: none;
+    background-color: transparent;
+    color: green;
+    border: 1px solid green;
+    border-radius: 1rem;
+    font-size: .8rem;
+    margin: .5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.allocated-pet-container table td .send-btn:hover {
+    color: #fff;
+    background-color: green;
+}
+
+.allocated-pet-container table td .dlt-btn {
+    width: 7rem;
+    height: 1.7rem;
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    border-radius: 1rem;
+    font-size: .8rem;
+    margin: .5rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.allocated-pet-container table td .dlt-btn:hover {
+    color: #fff;
+    background-color: red;
+}
+
+
+/* ==============================================================
+                 end of Allocated pets table
+==============================================================  */
+
+/* ==============================================================
+                 start of view feddback table
+================================================================= */
+
+.view-feedback-container {
+    width: 100%;
+    height: 40rem;
+}
+
+.view-feedback {
+    width: 93%;
+    height: 37rem;
+    background: transparent;
+    box-shadow: 1px 3px 17px 2px rgba(0, 0, 0, 0.66);
+    margin: 8rem 0 0 3rem;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.view-feedback .title {
+    margin: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: brown;
+}
+
+.view-feedback .view-feedback-table {
+    border: 1px solid black;
+    margin: 1rem 3rem;
+    text-align: center;
+    color: #333;
+    border-collapse: collapse;
+}
+
+.view-feedback .view-feedback-table tr th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+.view-feedback .view-feedback-table tr td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+.view-feedback-table tr td textarea {
+    border: 1px solid #333;
+    resize: none;
+    overflow-y: auto;
+    padding: .5rem;
+}
+
+.view-feedback #send-btn {
+    width: 5rem;
+    height: 1.8rem;
+    background-color: transparent;
+    color: green;
+    border: 1px solid green;
+    border-radius: 1rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.view-feedback #send-btn:hover {
+    color: #fff;
+    background-color: green;
+}
+
+.view-feedback .view-feedback-table tr td .dlt-btn {
+    width: 4rem;
+    height: 1.5rem;
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    border-radius: 1rem;
+    font-size: .8rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.view-feedback .view-feedback-table tr td .dlt-btn:hover {
+    color: #fff;
+    background-color: red;
+}
+
+
+
+/* ==============================================================
+                 end of view feddback table
+==============================================================  */
+
+/* ==============================================================
+                 Start of View-Pet Progress table
+==============================================================  */
+
+.pet-progress-container{
+
+    width: 95%;
+    height: 70vh;
+    margin: 6rem 0 0 2rem;
+}
+.pet-progress-container h2{
+    color: brown;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+    margin: 1rem 0 0 .7rem;
+}
+.pet-progress-container .progress{
+    width: 100%;
+    height: 80vh;
+    margin-top: 1rem;
+    border: .1rem solid black;
+    background-color: #fff;
+    overflow: scroll;
+    box-shadow: 1px 3px 17px 2px rgba(0, 0, 0, 0.66);
+}
+.pet-progress-container table{
+    width: 100%;
+    justify-content: center;
+    border: .1rem solid;
+    margin: 1rem 2rem;
+}
+
+.pet-progress-container table th{
+    font-size: 1.2rem;
+    font-weight: bold;
+    height: 2rem;
+    text-align: center;
+}
+
+.pet-progress-container table td{
+    font-size: 1rem;
+    text-align: center;
+    height: 2rem;
+}
+
+.pet-progress-container table td input{
+    width: 7rem;
+    height: 2.6rem;
+    background: transparent;
+    padding: .5rem;
+    border: none;
+    text-align: center;
+    transform: scale(1.1);
+}
+.pet-progress-container table td textarea{
+    width: 10rem;
+    height: 4rem;
+    background: transparent;
+    padding: .5rem;
+    border: none;
+    text-align: center;
+    transform: scale(1.1);
+    resize: none;
+}
+
+.pet-progress-container table td .send-btn{
+    width: 5rem;
+    height: 2rem;
+    text-decoration: none;
+    background-color: transparent;
+    color: green;
+    border: 1px solid green;
+    border-radius: 1rem;
+    font-size: .9rem;
+    margin: .5rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pet-progress-container table td .send-btn:hover {
+    color: #fff;
+    background-color: green;
+}
+
+.pet-progress-container table td .dlt-btn {
+    width: 5rem;
+    height: 2rem;
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    border-radius: 1rem;
+    font-size: .9rem;
+    margin: .5rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.pet-progress-container table td .dlt-btn:hover {
+    color: #fff;
+    background-color: red;
+}
+
+
+/* ==============================================================
+                 end of View-Pet Progress Table
+==============================================================  */
+/* ==============================================================
+                 end of View-Pet Progress Table
+==============================================================  */
+
+.profile-container{
+    display: flex;
+    width: 93%;
+    height: 80vh;
+    margin: 7rem 9rem 2rem 2rem ;
+    font-family: 'Poppins', sans-serif;
+
+    box-shadow: 0 9px 25px rgba(0,0,0,0.83);
+    /* border: 2px solid; */
+    border: none;
+    outline: none;
+    
+    display: grid;
+    grid-template-columns: 30% 70%;
+    
+}
+
+.profile-container  .col-1
+{
+    height: 65vh;
+    margin: 15% 0;
+    align-items: center;
+    box-shadow: 0 9px 25px rgba(0,0,0,0.83);
+}
+
+.profile-container  .col-1 .profile-img-and-name i{
+    border: 1px solid;
+    margin: 1rem 11rem 1rem 7.4rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    padding: 1.3rem;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+}
+
+.profile-container  .col-1 .profile-img-and-name h3{
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+.profile-container  .col-1 .profile-img-and-name h3 span input{
+    font-size: 2rem;
+    width: 12rem;
+    font-weight: bolder;
+    border: none;
+    outline: none;
+    color: #e73b24;
+}
+
+.profile-container .col-1 .chg-out{
+    /* display: flex; */
+    margin: 3rem .3rem;
+
+}
+
+.profile-container  .col-1 .chg-pwd-link{
+    margin: 3rem 2rem ;
+    text-decoration: none;
+    text-align: center;
+}
+
+.profile-container  .col-1 .chg-pwd-link a{ 
+    font-size: 1.2rem;
+    text-decoration: none;
+    border: 1px solid silver;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+}
+
+.profile-container  .col-1 .chg-pwd-link a:hover{
+    color: #fff;
+    background-color: #333;
+    transition: 0.5s;
+}
+
+.profile-container  .col-1 .logout-link{
+    text-decoration: none;
+    text-align: center;
+    margin: 3rem 2rem;
+   
+}
+
+.profile-container  .col-1 .logout-link a{
+    font-size: 1rem;
+    border: 1px solid #e73b24;
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+    color: #e73b24;
+    font-weight: bolder;
+    transition: 0.5s;
+
+}
+
+.profile-container  .col-1 .logout-link a:hover{
+    color: #fff;
+    background-color: #e73b24;
+}
+
+
+
+
+
+/* Grid Inputs CSS */
+
+
+.profile-container .col-2 .grid-inputs{
+
+    width: 90%;
+    height: 18rem;
+    margin: 1rem 5%;
+    padding: 1rem;
+    
+    
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(3 , 1fr);
+    row-gap: 1rem;
+}
+
+.profile-container .col-2 .grid-inputs .grid-input-field{
+    width: 95%;
+    height: 3.5rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    background: transparent;
+    border: 1px solid silver;
+
+
+    display: grid;
+    grid-template-columns: 15% 85%;
+
+}
+
+.profile-container .col-2 .grid-inputs .grid-input-field i{
+    text-align: center;
+    margin-top: 1.3rem;
+    line-height: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.profile-container .col-2 .grid-inputs .grid-input-field input ::placeholder{
+    color: #333;
+}
+
+.profile-container .col-2 .grid-inputs .grid-input-field input{
+    background: none;
+    padding: 1rem;
+    line-height: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    color: #333;
+}
+
+.profile-container .col-2 .grid-inputs .grid-gender-field{
+    display: 95%;
+    height: 3.5rem;
+    border: 1px solid silver;
+    border-radius: 2rem;
+}
+
+.profile-container .col-2 .grid-inputs .grid-gender-field i{
+    text-align: center;
+    margin: 1.3rem 1rem 0 1rem;
+    line-height: 1rem;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.profile-container .col-2 .grid-inputs .grid-gender-field input{
+    background: none;
+    padding: 1rem;
+    line-height: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+.col-2 .grid-inputs .grid-gender-field label{
+    background: none;
+    padding: .4rem;
+    line-height: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #333;
+}
+
+.profile-container .col-2 .address textarea {
+    width: 38rem;
+    height: 10rem;
+    padding:1rem 2rem;
+    color: #333;
+    border: 1px solid silver;
+    border-radius: 2.5rem;
+    margin-left: 4rem;
+    font-size: 1.2rem;
+    resize: none;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.profile-container .col-2 .profile-btn {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+.profile-container .col-2 .profile-btn input {
+    width: 6rem;
+    height: 2.3rem;
+    border: 1px solid silver;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: .2rem;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    transition: .5s;
+}
+
+.profile-container .col-2 .profile-btn input:hover {
+    color: #333;
+    background-color: #fff;
+    
+}
+
+/* ==============================================================
+                 end of Profile table
+==============================================================  */

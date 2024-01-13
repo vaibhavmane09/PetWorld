@@ -1,0 +1,188 @@
+/*  =========================================================================
+                            GIVE FEEDBACK styling start
+=========================================================================== */
+
+
+.give-feedback-container {
+    width: 85%;
+    height: 46rem;
+    margin: 1rem auto;
+    box-shadow: 1px 3px 17px 2px rgba(0,0,0,0.66);
+
+    border: 1px solid;
+}
+
+.give-feedback-container .give-feedback-form .title {
+    color: red;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 1rem;
+    margin: .5rem 0 0 0;
+}
+.give-feedback-container .give-feedback-form .title hr{
+    width: 35%;
+    margin: 0 33%;
+}
+
+.give-feedback-container .give-feedback-form form .flex-inputs {
+    width: 100%;
+    height: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin: 2rem auto;
+}
+
+.give-feedback-container .give-feedback-form form .flex-inputs .flex-input-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem auto;
+}
+
+.give-feedback-container .give-feedback-form form .flex-inputs label {
+    font-size: 1.5rem;
+    margin: 0 1.3rem;
+}
+
+.give-feedback-container .give-feedback-form form .flex-inputs input {
+    font-size: 1.2rem;
+    width: 20rem;
+    height: 3rem;
+    border: 1px solid silver;
+    border-radius: 2rem;
+    margin:0 0rem;
+    padding: .5rem 1.5rem;
+    word-spacing: .7rem;
+    letter-spacing: .1rem;
+}
+
+
+
+
+/* feedback on and feedback message container */
+
+.give-feedback-container .give-feedback-form form .feedback-on,
+.give-feedback-container .give-feedback-form form .feedback-msg {
+    width: 62rem;
+    margin: 3rem 1rem 1.2rem 5rem;
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.give-feedback-container .give-feedback-form form .feedback-on label,
+.give-feedback-container .give-feedback-form form .feedback-msg label {
+    font-size: 1.5rem;
+}
+
+.give-feedback-container .give-feedback-form form .feedback-on textarea,
+.give-feedback-container .give-feedback-form form .feedback-msg textarea {
+    border: 1px solid silver;
+    border-radius: 1rem;
+
+    padding: .8rem;
+
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+
+    resize: none;
+    overflow-y: auto;
+}
+
+
+
+/* feedback star rating styling */
+
+.give-feedback-container .give-feedback-form form .rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+    margin: 2rem 0 2rem 3rem;
+}
+
+.give-feedback-container .give-feedback-form form .rate span {
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    
+    position: relative;
+    top: .5rem;
+}
+
+.give-feedback-container .give-feedback-form form .rate:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+}
+
+.give-feedback-container .give-feedback-form form .rate:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor:pointer;
+    font-size: 2rem;
+    color: #ccc;
+}
+
+.give-feedback-container .give-feedback-form form .rate:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.give-feedback-container .give-feedback-form form .rate > input:checked ~ label {
+    color: #ffc700;    
+}
+
+.give-feedback-container .give-feedback-form form .rate:not(:checked) > label:hover,
+.give-feedback-container .give-feedback-form form .rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+
+.give-feedback-container .give-feedback-form form .rate > input:checked + label:hover,
+.give-feedback-container .give-feedback-form form .rate > input:checked + label:hover ~ label,
+.give-feedback-container .give-feedback-form form .rate > input:checked ~ label:hover,
+.give-feedback-container .give-feedback-form form .rate > input:checked ~ label:hover ~ label,
+.give-feedback-container .give-feedback-form form .rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+
+
+/* give-feedback form button styling */
+
+.give-feedback-container .give-feedback-form form .form-btns {
+    clear: left;
+    
+    width: 30rem;
+    
+    margin: 1rem auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.give-feedback-container .give-feedback-form form .form-btns .btn {
+    width: 9rem;
+    height: 3rem;
+    border-radius: 3.5rem;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.give-feedback-container .give-feedback-form form .form-btns .btn:hover {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid silver;
+}
+
+
+/*  =========================================================================
+                            GIVE FEEDBACK styling end
+=========================================================================== */

@@ -1,0 +1,182 @@
+/* Contact US page CSS Starts */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    margin-top: .3rem;
+    background-color: #ececec;
+}
+
+.ContactContainer{
+    position: relative;
+    min-width: 68.75rem;
+    min-height: 35.50rem;
+    display: flex;
+    top: 1rem;
+    z-index: 1000;
+    /* background: #fff; */
+}
+
+.ContactContainer .contactInfo{
+    position: absolute;
+    top: 3.14rem;
+    width: 22rem;
+    height: calc(100% - 100px);
+    background-color: #504c4c;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.15);
+
+}
+.ContactContainer .contactInfo h2{
+    color: wheat;
+    margin-bottom: 1rem;
+}
+
+.ContactContainer .contactInfo ul.info{
+    position: relative;
+    margin: 20px 0;
+
+}
+.ContactContainer .contactInfo ul.info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+
+    align-items: self-start;
+}
+.ContactContainer .contactInfo ul.info li p{
+    color: wheat;
+    margin-top: 7px;
+}
+.ContactContainer .contactInfo ul.info li span{
+    color: wheat;
+    margin-left: 1.6rem;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.ContactContainer .contactInfo ul.sci{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.ContactContainer .contactInfo ul.sci li{
+    text-align: center;
+    list-style: none;
+    margin: .2rem 1.6rem 0 0;
+      
+}
+.ContactContainer .contactInfo ul.sci li a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 1.3rem;
+}
+
+.contactInfo .map {
+    position: absolute;
+    top: 17rem;
+    right: 1.5rem;
+}
+
+.contactInfo .map iframe {
+    border-radius: .5rem;
+}
+
+.ContactContainer .contactForm{
+    position: absolute;
+    padding: 5rem 4rem;
+    padding-left: 15rem;
+    margin-left: 10rem;
+    width: calc(100% - 150px);
+    height: 100%;
+    background-color: #fff;
+    /* background: url("../IMG/cat_bg.jpg"); */
+    background-size: 120% 120%;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.25);
+}
+
+.ContactContainer .contactForm h2{
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 500;
+    
+}
+.ContactContainer .contactForm .formBox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+}
+.ContactContainer .contactForm .formBox .inputBox{
+    position: relative;
+    margin-bottom: 1.7rem;
+}
+
+.inputBox input,
+.inputBox textarea {
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.ContactContainer .contactForm .formBox .inputBox ::placeholder{
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.ContactContainer .contactForm .formBox .inputBox.w50{
+    width: 47%;
+}
+
+.ContactContainer .contactForm .formBox .inputBox.w100{
+    width: 100%;
+    display: inline-block;
+}
+.ContactContainer .contactForm .formBox .inputBox input,
+.ContactContainer .contactForm .formBox .inputBox textarea{
+    width: 100%;
+    resize: none;
+    padding: 5px 0;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #333;
+    /* color: #fff; */
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #777;
+}
+.ContactContainer .contactForm .formBox .inputBox textarea{
+    height: 7rem;
+}
+.ContactContainer .contactForm .formBox .w100 input[type="submit"]{
+    position: relative;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border-radius: 6rem;
+    max-width: 150px;
+    padding: 12px;
+
+}
+.ContactContainer .contactForm .formBox .w100 input[type="submit"]:hover{
+    background-color: #683b3b;
+    font-size: 1.1rem;
+}
+
+/* Contact Us page CSS Ends */

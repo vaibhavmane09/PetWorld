@@ -1,0 +1,111 @@
+/* start view feedback container */
+
+.view-feedback-container {
+    width: 100%;
+    height: 40rem;
+}
+
+.view-feedback {
+    width: 95%;
+    height: 38rem;
+    background: transparent;
+    box-shadow: 1px 3px 17px 2px rgba(0,0,0,0.66);
+    margin: 2rem 0 0 2.4rem;
+    
+    display: flex;
+    flex-direction: column;
+
+
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.view-feedback .title {
+    margin: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #e73b24;
+}
+
+.view-feedback .title hr{
+    width: 35%;
+    margin: .5rem 32%;
+}
+
+.view-feedback .view-feedback-table {
+    border: 1px solid black;
+    margin: 1rem 3rem;
+    text-align: center;
+    color: #333;
+    border-collapse: collapse;
+}
+
+.view-feedback .view-feedback-table tr th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.view-feedback .view-feedback-table tr td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+.view-feedback .view-feedback-table tr td input{
+    text-align: center;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+
+.view-feedback-table tr td textarea {
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 1rem;
+    overflow-y: auto;
+    padding: .3rem;
+}
+
+.view-feedback-table tr td .send-btn {
+    width: 4rem;
+    height: 1.5rem;
+    background-color: transparent;
+    color: green;
+    border: 1px solid green;
+    border-radius: 1rem;
+    font-size: .8rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.view-feedback-table tr td .dlt-btn {
+    width: 4rem;
+    height: 1.5rem;
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    border-radius: 1rem;
+    font-size: .8rem;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.view-feedback-table tr td .dlt-btn:hover {
+    color: #fff;
+    background-color: red;
+}
+
+.view-feedback-table tr td .send-btn:hover {
+    color: #fff;
+    background-color: green;
+}
+
+.view-feedback-table tr td .ratings {
+    font-size: .7rem;
+    color: #FF9529;
+}
+
+/* end view feedback container */

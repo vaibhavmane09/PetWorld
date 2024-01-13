@@ -1,0 +1,165 @@
+/* Add Pet Details  CSS Starts here */
+
+*{
+    text-transform: capitalize;
+}
+.pet-container{
+    width: 85%;
+    height: 40rem;
+    margin: 0 7.5%;
+}
+
+fieldset{
+    width: 100%;
+    height: 37rem;
+    /* border: .1rem solid black; */
+    margin: 2rem 1rem;
+    overflow-y: auto;
+    box-shadow: 1px 3px 17px 2px rgba(0,0,0,0.66);
+}
+
+legend{
+    text-align: center;
+    font-size: 2rem;
+    background-color: #eee;
+    border: .10rem solid black;
+}
+legend h2{
+    margin: 0 2rem;
+
+}
+.grid-inputs{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 2.5rem 0 0 10rem ;
+}
+
+.input-field{
+    font-size: 1.12rem;
+    margin-bottom: -1.6rem;
+}
+
+.input-field input{
+    width: 65%;
+    height: 2.3rem;
+    padding: 1rem;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    background-color: transparent;
+}
+.input-field label{
+    color: #333;
+    font-weight: bold;
+}
+.input-field select option{
+    color: #333;
+}
+
+.input-field select{
+    width: 33%;
+    height: 1.8rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+#traintype, #duration{
+    width: 65%;
+    height: 2.2rem;
+    margin: 1rem 0;
+    border-radius: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.input-field textarea{
+    width: 90%;
+    scroll-behavior:smooth ;
+    border-radius: .5rem;
+    resize: none;
+    font-size: 1rem;
+    outline: none;
+    padding: .5rem;
+    overflow-y: auto;
+
+}
+
+.gender-field{
+    font-size: 1.12rem;
+    margin-bottom: -1rem;
+}
+
+.gender-field input{
+    width: 2rem;
+    height: 1rem;
+    margin: .5rem;
+    align-items: center;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 2rem;
+    background-color: transparent;
+}
+
+.gender-field label{
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+.grid-inputs #input-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 4rem;
+    margin-top: 2rem;
+}
+
+#input-btn input{
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+#input-btn input:hover{
+    color: #333;
+    background-color: #fff;
+    transition: .5s;
+}
+
+.flex-input{
+    display: flex;
+    width: 20%;
+    margin: 3.5rem 0 2rem 8rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-input input{
+    width: 5.5rem;
+    height: 2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: .15rem;
+    color: #333;
+    background-color: #fff;
+    border: .1rem solid silver;
+    border-radius: 2rem;
+    transition: background-color 0.5s;
+}
+.flex-input input:hover{
+    color: #ff523b;
+    background-color: #eee;
+    font-weight: bold;
+    border: .12rem solid #ff523b;
+    transform: scale(1.1);
+}
+
+
+

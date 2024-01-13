@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Marck+Script&family=Poppins:wght@400;500;600&family=Roboto:wght@500&family=Ubuntu:wght@500&display=swap');
+
+*{
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+.profile-container{
+    display: flex;
+    width: 90%;
+    height: 82vh;
+    margin: 2rem auto;
+    font-family: 'Poppins', sans-serif;
+
+    box-shadow: 0 9px 25px rgba(0,0,0,0.83);
+    /* border: 2px solid; */
+    
+    display: grid;
+    grid-template-columns: 30% 70%;
+    
+}
+
+.profile-container  .col-1
+{
+    height: 82vh;
+    align-items: center;
+    box-shadow: 0 9px 25px rgba(0,0,0,0.83);
+}
+
+.profile-container  .col-1 .profile-img-and-name i{
+    margin: -1rem 9rem .5rem 10rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    border: 1px solid;
+    border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
+}
+
+.profile-container  .col-1 .profile-img-and-name h3{
+    font-size: 2.5rem;
+    color: #333;
+    margin: 1rem;
+}
+.profile-container .col-1 .profile-img-and-name h3 span input{
+    font-size: 2rem;
+    font-weight: bolder;
+    width: 14rem;
+    color: #e73b24;
+    margin: -1rem 1rem .2rem 1rem;
+}
+
+/* .profile-container  .col-1 .profile-img-and-name input{
+    display: inline-block;
+    width: 10rem;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-bottom: .1rem solid silver;
+    margin: 0 8.7rem;
+} */
+
+.profile-container .col-1 .add-pet{
+    margin: 1rem 5rem 0 5rem;
+    text-align: center;
+    border: .13rem solid silver;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-sizing:content-box;
+}
+
+.profile-container  .col-1 .add-pet p{
+    font-size: 1.5rem;
+    margin-bottom: .7rem;
+    font-weight: 500;
+}
+
+.profile-container  .col-1 .add-pet a{
+    font-size: 1rem;
+    border: 1px solid silver;
+    padding: .3rem 1rem;
+    border-radius: 2rem;
+    transition: background-color 0.5s;
+}
+
+
+
+.profile-container  .col-1 .add-pet a:hover{
+    color: #fff ;
+    background-color: #333;
+    transform: scale(1.1);
+
+}
+
+.profile-container .col-1 .chg-out{
+    /* display: flex; */
+    margin: 2rem .3rem;
+
+}
+
+.profile-container  .col-1 .chg-pwd-link{
+    margin: 2rem 2rem ;
+    text-align: center;
+}
+
+.profile-container  .col-1 .chg-pwd-link a{ 
+    font-size: 1rem;
+    text-decoration: none;
+    border: 1px solid silver;
+    text-align: center;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+}
+
+.profile-container  .col-1 .chg-pwd-link a:hover{
+    color: #fff;
+    background-color: #333;
+}
+
+.profile-container  .col-1 .logout-link{
+    text-decoration: none;
+    text-align: center;
+   
+}
+
+.profile-container  .col-1 .logout-link a{
+    font-size: 1rem;
+    border: 1px solid #e73b24;
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+    color: #e73b24;
+    font-weight: bolder;
+    transition: 0.5s;
+
+}
+
+.profile-container  .col-1 .logout-link a:hover{
+    color: #fff;
+    background-color: #e73b24;
+}
+
+
+
+
+
+/* Grid Inputs CSS */
+
+.col-2 .grid-inputs{
+
+    width: 90%;
+    height: 18rem;
+    margin: 1rem 5%;
+    padding: 1rem;
+    
+    
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    grid-template-rows: repeat(3 , 1fr);
+    row-gap: 1rem;
+}
+
+.col-2 .grid-inputs .grid-input-field{
+    width: 95%;
+    height: 3.5rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    background: transparent;
+    border: 1px solid silver;
+
+
+    display: grid;
+    grid-template-columns: 15% 85%;
+
+}
+
+.col-2 .grid-inputs .grid-input-field i{
+    text-align: center;
+    margin-top: 1.3rem;
+    line-height: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.col-2 .grid-inputs .grid-input-field input ::placeholder{
+    color: #333;
+}
+
+.col-2 .grid-inputs .grid-input-field input{
+    background: none;
+    padding: 1rem;
+    line-height: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #333;
+}
+
+
+
+.col-2 .address textarea {
+    width: 49rem;
+    height: 10rem;
+    padding:1rem 2rem;
+    color: #333;
+    border: 1px solid silver;
+    border-radius: 2.5rem;
+    margin-left: 4rem;
+    font-size: 1.2rem;
+    resize: none;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+.col-2 .profile-btn {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem;
+}
+
+.col-2 .profile-btn input {
+    width: 6rem;
+    height: 2.3rem;
+    border: 1px solid silver;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: .2rem;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    transition: .5s;
+}
+
+.col-2 .profile-btn input:hover {
+    color: #333;
+    background-color: #fff;
+    
+}

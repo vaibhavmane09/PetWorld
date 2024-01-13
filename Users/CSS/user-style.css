@@ -1,0 +1,237 @@
+/*  =========================================================================
+                                BASE STYLING 
+=========================================================================== */
+
+
+/* courgette font link - for website title  */
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playfair+Display:wght@400;600;800&display=swap');
+
+/* playfair display font link - for main heading */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;800&display=swap');
+
+/* nunito font link - for noraml text */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Nunito+Sans:wght@400;500;600&display=swap');
+
+:root {
+    --body-bg-color: #fff;
+    --orange-color: #F58840;
+    --black-color: #000;
+    --light-dark-color: #32324D;
+    --green-color: #81BAB4;
+    --hover-color: #FBD180;
+
+    --contact-form-green-color: #1abc9c;
+
+    --mobile-nav-bg-color: #bddcd9;
+
+    --box-shadow: 0 .5rem 1.5rem rgba(8, 8, 8, 0.3);
+    --form-box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    --footer-box-shadow: 1px 10px 50px 10px rgba(0,0,0,0.75);
+
+    --ff-website-title: 'Courgette', cursive;
+    --ff-heading: 'Playfair Display', serif;
+}
+
+* {
+    color: var(--black-color);
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none; outline: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--body-bg-color);
+}
+
+
+
+
+/*  =========================================================================
+                            NAVBAR styling starts
+=========================================================================== */
+
+.header {
+    height: 9rem;
+    /* position: fixed;
+    top: 0; left: 0; right: 0; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3%;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    color: var(--black-color);
+    font-size: 4rem;
+    font-family: var(--ff-website-title);
+    font-weight: bolder;
+    z-index: 100;
+}
+
+.logo span {
+    color: var(--orange-color);
+    font-family: var(--ff-website-title);
+}
+
+.header .logo:hover,
+.logo span:hover {
+    transform: scale(1.05);
+}
+
+.header .navbar {
+    letter-spacing: .05rem;
+}
+
+.navbar-list {
+    display: flex;
+    gap: 4.8rem;
+    list-style: none;
+}
+
+.navbar-list li {
+    margin-left: .8rem;
+}
+
+
+.navbar-link:link,
+.navbar-link:visited {
+    display: inline-block;
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+.active,
+.navbar-link:hover {
+    color: var(--orange-color);
+    transform: scale(1.2);
+}
+
+/*  =========================================================================
+                            NAVBAR styling ends
+=========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  =========================================================================
+                            HERO styling starts
+=========================================================================== */
+
+.bubbles{
+    width: 100%;
+    position: absolute;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    bottom: -70px;
+}
+
+.bubbles img{
+    width: 50px;
+    z-index: 1;
+    animation:bubble 7s linear infinite;
+}
+
+@keyframes bubble{
+
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 1;
+    }
+
+    70%{
+        opacity: 1;
+    }
+
+    100%{
+        transform: translateY(-80vh);
+        opacity: 0;
+    }
+
+}
+
+.bubbles img:nth-child(1){
+    animation-delay: 2s;
+    width: 3rem;
+}
+
+.bubbles img:nth-child(2){
+    animation-delay: 2s;
+    width: 3rem;
+}
+
+.bubbles img:nth-child(3){
+    animation-delay: 4s;
+    width: 3rem;
+}
+
+.bubbles img:nth-child(4){
+    animation-delay: 2s;
+    width: 1rem;
+}
+
+.bubbles img:nth-child(5){
+    animation-delay: 2s;
+    width: 2rem;
+}
+
+.text{
+    font-size: 4.5rem;
+    position: absolute;
+    top: 30rem;
+    left: 50rem;
+    color: #333;
+    animation: textup 8s linear infinite;
+    transform: translateY(300px);
+    animation-iteration-count: infinite;
+}
+ 
+@keyframes textup
+ {
+    10%{
+        transform: translateY(2rem);
+    }
+    100%{
+        transform: translateY(0px);
+        transform: scale(1.2);
+    }
+}
+
+
+
+
+
+
+
+
+
+/*  =========================================================================
+                            HERO styling ends
+=========================================================================== */
+

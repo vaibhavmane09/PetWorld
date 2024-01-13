@@ -1,0 +1,72 @@
+.buy-container{
+    width: 90%;
+    height: 35.5rem;
+}
+.buy-container .main{
+    width: 70%;
+    height: 34rem;
+    margin: 1rem 20%;
+}
+
+.main{
+    border: 10px solid silver;
+    margin: 3px;
+}
+.buy-container .main .container{
+    margin:10px 20px;
+    display: flex;
+}
+.buy-container .main .right-box{
+    width:50%;
+    height: 30rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.main-image-box{
+    padding:40px 0px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #167fac1f;
+}
+.main-image{
+    height: 90%;
+    width: 90%;
+}
+.buy-container .main .details-box{
+    width:50%;
+    padding-left: 50px;;
+}
+.details-box h1{
+    color: #066289;
+}
+.details-box h2{
+    color: #1680AC;
+}
+.inputs{
+    width:70%;
+    justify-content:center;
+}
+td input{
+    height:37px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid silver;
+    outline: none;
+}
+button{
+    border:none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    background: #1680AC;
+    color: white;
+    margin-top: 14px;
+    cursor: pointer;
+    font-size: 18px;
+}
+button:hover{
+    background: white;
+    border: 1px solid #1680AC;
+    color:#1680AC;
+}
